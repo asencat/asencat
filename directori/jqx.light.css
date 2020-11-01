@@ -62,7 +62,7 @@
 
 @font-face {
     font-family: jqx-icons;
-    src: local('./font/jqx-icons'), url('./font/jqx-icons.woff2') format('woff2'), url('./font/jqx-icons.woff') format('woff'), url('./font/jqx-icons.ttf') format('truetype'), url('./font/jqx-icons.eot') format('embedded-opentype');
+    src: local('font/jqx-icons'), url('font/jqx-icons.woff2') format('woff2'), url('font/jqx-icons.woff') format('woff'), url('font/jqx-icons.ttf') format('truetype'), url('font/jqx-icons.eot') format('embedded-opentype');
     font-weight: normal;
     font-style: normal;
 }
