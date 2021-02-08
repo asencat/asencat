@@ -146,12 +146,25 @@
                 return '<div class="tm-1 tm-12">' + value + '</div>';
             };
             */
-            var cellsrenderer = function (row, columnfield, value, defaulthtml, columnproperties) {
+            /*var cellscarrec = function (row, columnfield, value, defaulthtml, columnproperties) {
                 if (value == "CE") {
-                    //return '<span style="margin: 37px;float:' + columnproperties.cellsalign + '; color:red; font-weight:bold">' + value + '</span>';
-                    return '<div style="border-radius:5px; width:22px; font-weight:bold; margin: 4px 0; margin-left:37px ;padding:2px; color:#ffa705; background:#303a56; text-align:center">' + value + '</div>';
+                  return '<span style="margin: 4px; float: ' + columnproperties.cellsalign + '; font-weight:bold; color: #0000ff;">' + value + '</span>';
+                    //return '<div style="border-radius:5px; width:22px; font-weight:bold; margin: 4px 0; margin-left:37px ;padding:2px; color:#ffa705; background:#303a56; text-align:center">' + value + '</div>';
+                }
+            }*/
+            var cellscarrec = function (row, column, value) {
+                if (value == "CE") {
+                  //return '<span style="margin: 4px; float: ' + columnproperties.cellsalign + '; font-weight:bold; color: #0000ff;">' + value + '</span>';
+                  return '<span style="font-weight:bold; color:#ffa705; margin-left:40px; margin-top:260px">' + value + '</span>';
                 }
             }
+            
+          
+
+
+
+
+
             var style = {
               /*headerBackgroundColor: '#FFA705',*/
               headerColor: '#000',
@@ -195,7 +208,7 @@
                     cellsalign: 'center',
                     filtertype: 'list',
                     style: style,
-                    cellsrenderer: cellsrenderer
+                    cellsrenderer: cellscarrec
                   },
                   {
                     text: 'Centre', 
