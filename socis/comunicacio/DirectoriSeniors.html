@@ -13,12 +13,12 @@
 
     <style>
       body, html {
-        width: 100%;
-        height: 100%;
+        /*width: 100%;
+        height: 680px;
         overflow: hidden;
         padding: 3px;
-        box-sizing: border-box;
-        margin: 0;
+        /*box-sizing: border-box;
+        margin: 0;*/
       }
     </style>
 <style>
@@ -186,9 +186,10 @@
             $("#grid").jqxGrid(
             {
                 width: '100%',
-                height: '580',
+                height: '600',
                 source: dataAdapter,
                 autoshowfiltericon: true,
+                enabletooltips: true,
                 rowsheight: 28,
                 theme: 'light',
                 filterable: true,
