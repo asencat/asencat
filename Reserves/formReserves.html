@@ -497,7 +497,7 @@ return false;
 </head>
 <body onLoad="SetCookieValues();" style="font-family:roboto">
   
-<div class="w3-card-8 w3-white mainContainer" style="max-width:750px">
+<div class="w3-card-8 w3-white w3-margin-top mainContainer" style="max-width:750px">
   <!-- FORMTITLE_BEGIN -->
   <div class="w3-container" style="background:#D5EAF4;">
       <h1 style="color:#002851;font-weight:bold;">Reserva Sales CAMBRA</h1>
@@ -541,7 +541,7 @@ return false;
       <input class="w3-input w3-border-bottom w3-white timepickerField" style="outline-style:none;" placeholder="Hora Fi" type="text" name="hfi" id="hfi" value="" required oninvalid="this.setCustomValidity('Camp Obligatori')" oninput="this.setCustomValidity('')">
     </div>
   </div>
-  <p>Escriviu un nom per línia tant en sèniors com en assessorats</p>
+  <p class="w3-margin-left">Escriviu un nom per línia tant en sèniors com en assessorats</p>
   <div class="w3-row w3-margin-top">
     <div class="w3-half w3-container">
       <!-- label>Nom complet dels <strong>SÈNIORS</strong></label -->
@@ -553,7 +553,7 @@ return false;
     <div class="w3-half w3-container">
       <!-- label>Nom complet dels <strong>ASSESSORATS</strong></label -->
       <div>
-        <textarea class="w3-input w3-border_bottom w3-white"  placeholder="Nom complet dels ASSESSORATS" style="font-size: 0.9em; outline-color:#C9C9C9" type="text" style="resize:none" name="assessorats" id="assessorats" value="" rows="7" maxlength="300" required oninvalid="this.setCustomValidity('Camp Obligatori')" oninput="this.setCustomValidity('')"></textarea>
+        <textarea class="w3-input w3-border-bottom w3-white"  placeholder="Nom complet dels ASSESSORATS" style="font-size: 0.9em; outline-color:#C9C9C9" type="text" style="resize:none" name="assessorats" id="assessorats" value="" rows="7" maxlength="300" required oninvalid="this.setCustomValidity('Camp Obligatori')" oninput="this.setCustomValidity('')"></textarea>
         <div id="the-count_assessorats" style="font-family: inherit; font-style: inherit; float: right; padding: 0.1em 0 0 0; font-size: 0.95em;"><span id="current_assessorats">0</span><span id="maximum_assessorats"> / 300</span></div>
       </div>
     </div>
