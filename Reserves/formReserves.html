@@ -495,10 +495,10 @@ return false;
 </head>
 <body onLoad="SetCookieValues();" style="font-family:roboto">
   
-<div class="w3-card-8 w3-white mainContainer" style="max-width:750px">
+<div class="w3-card-8 w3-round-large w3-white mainContainer" style="max-width:750px">
   <!-- FORMTITLE_BEGIN -->
-  <div class="w3-container" style="background:#D5EAF4;">
-      <h1 style="color:#002851;font-weight:bold;">Reserva Sales CAMBRA</h1>
+  <div class="w3-container w3-margin-top" style="background:#FFA705;">
+  <h1 style="color:#223D5B;font-weight:bold;">Reserva Sales CAMBRA</h1>
   </div>
 <!-- FORMTITLE_END -->
 
@@ -541,25 +541,26 @@ return false;
   </div>
 
   <div class="w3-container w3-text-gray w3-margin-top">
-    <span><input class="w3-check" type="checkbox" value="x" name="Pisarra/Papergraf" id="Pisarra/Papergraf">&nbsp;&nbsp;<label>Pisarra/Paperògraf</label></span>
+    <p>Seleccioneu el material en el cas que ho necessiteu:</p>
+    <span><input class="w3-check" type="checkbox" value="x" name="Pisarra/Paperograf" id="Pisarra/Paperograf">&nbsp;&nbsp;<label>Pisarra/Paperògraf</label></span>
     <span class="w3-margin-left"><input class="w3-check" type="checkbox" value="x" name="Pantalla" id="Pantalla">&nbsp;&nbsp;<label>Pantalla</label></span>
   </div>
 
-  <p class="w3-margin-left">Escriviu un nom per línia (<span style="font-weight:bold">prémer intro</span>), tant en sèniors com en assessorats</p>
+  <p class="w3-margin-left w3-padding-top">Escriviu un nom per línia (<span style="font-weight:bold">prement</span> <img src="../images/intro.jpg" style="width:20px;height:20px;" /> ), tant en sèniors com en assessorats</p>
 
   <div class="w3-row w3-margin-top">
     <div class="w3-half w3-container">
       <!-- label>Nom complet dels <strong>SÈNIORS</strong></label -->
       <div> 
         <textarea class="w3-input w3-border-bottom w3-white" placeholder="Nom complet dels SÈNIORS" style="font-size: 0.9em; outline-color:#C9C9C9" type="text" style="resize:none" name="seniors" id="seniors" value="" rows="7" maxlength="300" required oninvalid="this.setCustomValidity('Camp Obligatori')" oninput="this.setCustomValidity('')"></textarea>
-        <div id="the-count_seniors" style="font-family: inherit; font-style: inherit; float: right; padding: 0.1em 0 0 0; font-size: 0.95em;"><span id="current_seniors">0</span><span id="maximum_seniors"> / 300</span></div>
+        <div id="the-count_seniors" style="font-family: inherit; font-style: inherit; float: right; padding: 0.1em 0 0 0; font-size: 0.85em;"><span id="current_seniors">0</span><span id="maximum_seniors"> / 300</span></div>
       </div>    
     </div>
     <div class="w3-half w3-container">
       <!-- label>Nom complet dels <strong>ASSESSORATS</strong></label -->
       <div>
         <textarea class="w3-input w3-border-bottom w3-white"  placeholder="Nom complet dels ASSESSORATS" style="font-size: 0.9em; outline-color:#C9C9C9" type="text" style="resize:none" name="assessorats" id="assessorats" value="" rows="7" maxlength="300" required oninvalid="this.setCustomValidity('Camp Obligatori')" oninput="this.setCustomValidity('')"></textarea>
-        <div id="the-count_assessorats" style="font-family: inherit; font-style: inherit; float: right; padding: 0.1em 0 0 0; font-size: 0.95em;"><span id="current_assessorats">0</span><span id="maximum_assessorats"> / 300</span></div>
+        <div id="the-count_assessorats" style="font-family: inherit; font-style: inherit; float: right; padding: 0.1em 0 0 0; font-size: 0.85em;"><span id="current_assessorats">0</span><span id="maximum_assessorats"> / 300</span></div>
       </div>
     </div>
   </div>
@@ -574,7 +575,7 @@ return false;
 
 <div class="w3-container">
   <p>
-    <button type="submit" class="w3-btn w3-orange w3-round-large" style="font-weight:bold;">Envia</button>      
+    <button type="submit" class="w3-btn w3-text-white w3-round-large" style="font-weight:bold;background:#223D5B">Envia</button>      
     <!-- RESETBUTTON -->
     <!-- PRINTBUTTON -->    
   </p>
