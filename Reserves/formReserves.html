@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rserves Sales CAMBRA</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../images/asen.png">
-    <link rel="apple-touch-icon" href="../images/asen.png"/>
     <meta name="generator" content="DA-Formmaker 4.11.12">
     <!--TEMPLATE:4.2-->
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
@@ -497,7 +495,7 @@ return false;
 </head>
 <body onLoad="SetCookieValues();" style="font-family:roboto">
   
-<div class="w3-card-8 w3-white w3-margin-top mainContainer" style="max-width:750px">
+<div class="w3-card-8 w3-white mainContainer" style="max-width:750px">
   <!-- FORMTITLE_BEGIN -->
   <div class="w3-container" style="background:#D5EAF4;">
       <h1 style="color:#002851;font-weight:bold;">Reserva Sales CAMBRA</h1>
@@ -541,7 +539,14 @@ return false;
       <input class="w3-input w3-border-bottom w3-white timepickerField" style="outline-style:none;" placeholder="Hora Fi" type="text" name="hfi" id="hfi" value="" required oninvalid="this.setCustomValidity('Camp Obligatori')" oninput="this.setCustomValidity('')">
     </div>
   </div>
-  <p class="w3-margin-left">Escriviu un nom per línia tant en sèniors com en assessorats</p>
+
+  <div class="w3-container w3-text-gray w3-margin-top">
+    <span><input class="w3-check" type="checkbox" value="x" name="Pisarra/Papergraf" id="Pisarra/Papergraf">&nbsp;&nbsp;<label>Pisarra/Paperògraf</label></span>
+    <span class="w3-margin-left"><input class="w3-check" type="checkbox" value="x" name="Pantalla" id="Pantalla">&nbsp;&nbsp;<label>Pantalla</label></span>
+  </div>
+
+  <p class="w3-margin-left">Escriviu un nom per línia (<span style="font-weight:bold">prémer intro</span>), tant en sèniors com en assessorats</p>
+
   <div class="w3-row w3-margin-top">
     <div class="w3-half w3-container">
       <!-- label>Nom complet dels <strong>SÈNIORS</strong></label -->
